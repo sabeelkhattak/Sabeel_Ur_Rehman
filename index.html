@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Website</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-image: url("image/pex.jpg");
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-height: 100vh; /* Ensure body takes at least full viewport height */
+            display: flex;
+            flex-direction: column; /* Allow footer to sit at the bottom */
+        }
+
+        /* Logo section */
+        .logo {
+            margin: 20px 0px;
+            padding: 10px;
+            border: 2px solid blue;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+            text-align: center;
+            width: 20%;
+        }
+
+        .logo img {
+            width: 60px;
+            border-radius: 50%;
+        }
+
+        /* Main navigation bar */
+        .mainbar {
+            display: inline-block;
+    margin: 74px auto;
+    padding: 15px;
+    border: 2px solid red;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    width: 55%;
+    text-align: center;
+        }
+
+        .submainbar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .submainbar li {
+            display: inline;
+            margin: 0 15px;
+        }
+        .nav{
+            display: flex;
+
+        }
+
+        .submainbar a {
+            text-decoration: none;
+            font-size: 18px;
+            color: red;
+            font-weight: bold;
+        }
+
+        /* Form container */
+        .container {
+            margin-top: 30px;
+            padding: 20px;
+            border: 2px solid #333;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            width: 30%; /* Adjust width to your liking */
+            margin-left: 5%; /* Align to the left */
+            text-align: left;
+        }
+
+        .container form {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start; /* Align items to the start of the form */
+        }
+
+        .container input {
+            width: 100%; /* Full width */
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .container button {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: purple;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        .container button:hover {
+            background-color: darkmagenta;
+        }
+
+        /* Sign In and Sign Up buttons styling */
+        .sign-in-up {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+            width: 100%;
+        }
+
+        .sign-in-up button {
+            width: 48%; /* Set width to make two buttons fit side by side */
+            background-color: purple;
+            border: none;
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .sign-in-up button:hover {
+            background-color: darkmagenta;
+        }
+
+        /* Footer styling */
+        footer {
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-top: 2px solid #333;
+            text-align: center;
+            color: #333;
+            width: 100%; /* Full width */
+            position: relative; /* Allow it to be positioned in the normal document flow */
+            margin-top: auto; /* Push footer to the bottom */
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        footer a {
+            color: purple;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Logo section -->
+     <div class="nav">
+    <div class="logo">
+        <img src="image/img.png" alt="Gym logo">
+        <h1>Khattak Club</h1>
+    </div>
+
+    <!-- Main navigation bar -->
+    <div class="mainbar">
+        <div class="submainbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="workout.html">Workout Routine</a></li> <!-- Link to workout.html -->
+                <li><a href="nutrition.html">Nutrition</a></li> <!-- Link to Nutrition page -->
+                <li><a href="about.html">About</a></li> <!-- Current page -->
+                <li><a href="C:\Users\sabee\Desktop\website fitness\contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+     </div>
+    <!-- Form container -->
+    <div class="container">
+        <form>
+            <input type="text" name="first_name" placeholder="First Name">
+            <input type="text" name="mid_name" placeholder="Middle Name">
+            <input type="text" name="last_name" placeholder="Last Name">
+            <input type="password" name="password" placeholder="Password">
+            <div class="sign-in-up">
+                <button type="button">Sign In</button>
+                <button type="button">Sign Up</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Footer section -->
+    <footer>
+        <p>&copy; 2024 Sabeel Gym. All rights reserved.</p>
+        <p>Follow us on 
+            <a href="#">Facebook</a>, 
+            <a href="#">Twitter</a>, 
+            <a href="#">Instagram</a>
+        </p>
+    </footer>
+</body>
+</html>

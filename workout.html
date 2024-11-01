@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Website</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-image: url("image/pex.jpg");
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Logo section */
+        .logo {
+            margin: 20px 0px;
+            padding: 10px;
+            border: 2px solid blue;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+            text-align: center;
+            width: 20%;
+        }
+
+        .logo img {
+            width: 60px;
+            border-radius: 50%;
+        }
+
+        /* Main navigation bar */
+        .mainbar {
+            display: inline-block;
+            margin: 74px auto;
+            padding: 15px;
+            border: 2px solid red;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+            width: 55%;
+            text-align: center;
+        }
+
+        .submainbar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .submainbar li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        .nav {
+            display: flex;
+        }
+
+        .submainbar a {
+            text-decoration: none;
+            font-size: 18px;
+            color: red;
+            font-weight: bold;
+        }
+
+        /* Workout table styling */
+        .workout-table {
+            margin: 20px auto;
+            padding: 15px;
+            width: 80%;
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 2px solid #333;
+            border-radius: 8px;
+            color: #333;
+            text-align: center;
+        }
+
+        .workout-table th, .workout-table td {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .workout-table th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+
+        .workout-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        /* Footer styling */
+        footer {
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-top: 2px solid #333;
+            text-align: center;
+            color: #333;
+            width: 100%;
+            position: relative;
+            margin-top: auto;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        footer a {
+            color: purple;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Logo section -->
+    <div class="nav">
+        <div class="logo">
+            <img src="image/img.png" alt="Gym logo">
+            <h1>Khattak Club</h1>
+        </div>
+
+        <!-- Main navigation bar -->
+        <div class="mainbar">
+            <div class="submainbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="workout.html">Workout Routine</a></li>
+                    <li><a href="nutrition.html">Nutrition</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="C:\Users\sabee\Desktop\website fitness\contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Workout Routine Table -->
+    <table class="workout-table">
+        <thead>
+            <tr>
+                <th>Day</th>
+                <th>Exercise</th>
+                <th>Sets</th>
+                <th>Reps</th>
+                <th>Rest</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Monday</td>
+                <td>Bench Press</td>
+                <td>3</td>
+                <td>8-10</td>
+                <td>60s</td>
+            </tr>
+            <tr>
+                <td>Monday</td>
+                <td>Squats</td>
+                <td>3</td>
+                <td>8-10</td>
+                <td>60s</td>
+            </tr>
+            <tr>
+                <td>Tuesday</td>
+                <td>Deadlifts</td>
+                <td>3</td>
+                <td>6-8</td>
+                <td>90s</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>Rest</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>Thursday</td>
+                <td>Pull-Ups</td>
+                <td>3</td>
+                <td>8-10</td>
+                <td>60s</td>
+            </tr>
+            <tr>
+                <td>Friday</td>
+                <td>Leg Press</td>
+                <td>3</td>
+                <td>10-12</td>
+                <td>60s</td>
+            </tr>
+            <tr>
+                <td>Saturday</td>
+                <td>Cardio (Running)</td>
+                <td>-</td>
+                <td>30 min</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>Sunday</td>
+                <td>Rest</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Footer section -->
+    <footer>
+        <p>&copy; 2024 Sabeel Gym. All rights reserved.</p>
+        <p>Follow us on 
+            <a href="#">Facebook</a>, 
+            <a href="#">Twitter</a>, 
+            <a href="#">Instagram</a>
+        </p>
+    </footer>
+</body>
+</html>

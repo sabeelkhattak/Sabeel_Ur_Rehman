@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Website</title>  
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-image: url("image/pex.jpg");
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Logo section */
+        .logo {
+            margin: 20px 0px;
+            padding: 10px;
+            border: 2px solid blue;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+            text-align: center;
+            width: 20%;
+        }
+
+        .logo img {
+            width: 60px;
+            border-radius: 50%;
+        }
+
+        /* Main navigation bar */
+        .mainbar {
+            display: inline-block;
+            margin: 74px auto;
+            padding: 15px;
+            border: 2px solid red;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+            width: 55%;
+            text-align: center;
+        }
+
+        .submainbar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .submainbar li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        .nav {
+            display: flex;
+        }
+
+        .submainbar a {
+            text-decoration: none;
+            font-size: 18px;
+            color: red;
+            font-weight: bold;
+        }
+
+        /* About content */
+        .about-content {
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-top: 2px solid #333;
+            text-align: center;
+            color: #333;
+            margin: 20px auto;
+            width: 80%;
+            border-radius: 8px;
+        }
+
+        /* Footer styling */
+        footer {
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-top: 2px solid #333;
+            text-align: center;
+            color: #333;
+            width: 100%;
+            position: relative;
+            margin-top: auto;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        footer a {
+            color: purple;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Logo section -->
+    <div class="nav">
+        <div class="logo">
+            <img src="image/img.png" alt="Gym logo">
+            <h1>Khattak Club</h1>
+        </div>
+
+        <!-- Main navigation bar -->
+        <div class="mainbar">
+            <div class="submainbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="workout.html">Workout Routine</a></li>
+                    <li><a href="nutrition.html">Nutrition</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- About content -->
+    <div class="about-content">
+        <h2>About Sabeel Gym</h2>
+        <p>Welcome to Sabeel Gym, where fitness meets passion. Our mission is to empower individuals to achieve their fitness goals through personalized training programs, nutritional guidance, and a supportive community.</p>
+        <p>Our gym is equipped with the latest fitness equipment and offers a variety of classes suitable for all fitness levels. Whether you are a beginner or an experienced athlete, we have something for you.</p>
+        <p>Join us today and take the first step towards a healthier, stronger you!</p>
+    </div>
+
+    <!-- Footer section -->
+    <footer>
+        <p>&copy; 2024 Sabeel Gym. All rights reserved.</p>
+        <p>Follow us on 
+            <a href="#">Facebook</a>, 
+            <a href="#">Twitter</a>, 
+            <a href="#">Instagram</a>
+        </p>
+    </footer>
+</body>
+</html>
